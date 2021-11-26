@@ -1,0 +1,256 @@
+/*
+HTML 5 Template Name: Basic 19
+File: Layout CSS
+Author: OS Templates
+Author URI: https://www.os-templates.com/
+Licence: <a href="https://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+body {
+    background-image: url('/feny.gif');
+    background-size: cover;
+
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: center center;
+
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-family:'IM Fell DW Pica', serif; Lora, serif; Gentium Book Basic, ; Alegreya, serif;Libre Baskerville, serif;Girassol,Georgia, Times New Roman, Times, serif;
+    color:#FFFFFF;
+}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:block; width:100%; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+/*----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:inline; width:100%; text-align:left;}
+
+.row1{color:#C0BAB6; background-color:#000000;}
+.row2{color:#979797; background-color:#000000;}
+.row3, .row3 a{color:#000000; background-color:#1E1E1E;}
+.row5{color:#fbc080; background-color:#000000;}
+.row55{color:#fbc080; }
+.row56{color:#fbc080;text-align: center;}
+.row2{color:#b5aeff; background-color:#000000;}
+.row11{color:#b5aeff;}
+.row110{color:#b5aeff;vertical-align: bottom;}
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{display:block; width:100%; }
+
+
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0;  font-style:normal; line-height:normal;}
+
+h1, h2 {
+	font-weight: normal;
+}
+h1 {font-family: 'Gentium Book Basic', serif;ff-brokenscript-web, serif;
+font-style: normal;
+font-weight: 700;}
+h3 {font-family: 'IM Fell DW Pica', serif; ff-brokenscript-web, serif;
+font-style: normal;
+font-size: 70px;}
+h2 { font-size: 38px; margin: 0 0 0px 0; }
+p, pre { margin: 0 0 0px 0; }
+
+h4 {font-family: 'IM Fell DW Pica', serif; ff-brokenscript-web, serif;
+font-style: normal;
+font-weight: 400;}
+
+h5 {font-family: 'Lora', serif; ff-brokenscript-web, serif;
+font-style: normal;
+font-size: 100%;
+font-size: 1.3em;
+font-weight: 400}
+
+.nav audio { position: absolute; left: 110%; top: 10px; display: block; height: 30px; width: 200px; }
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: antiquewhite;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: orange;
+}
+
+li {
+list-style-type: none;
+}
+
+.marquee {
+  background-color: #000000;
+  width:10;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 5;
+  position: relative;
+  left: 0%;
+  animation: marquee 200s linear infinite;
+}
+.marquee:hover span {
+  animation-play-state: ;
+}
+
+.marquee span:nth-child(1) {
+  animation-delay: -100s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: -100s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: -100s;
+}
+.marquee span:nth-child(4) {
+  animation-delay: -100s;
+}
+.marquee span:nth-child(5) {
+  animation-delay: -100s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+
+.clicker {
+width:100px;
+height:100px;
+background-color:blue;
+outline:none;
+cursor:pointer;
+}
+
+.hiddendiv{
+display:none;
+height:200px;
+background-color:green;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+a .hidden {
+  visibility: hidden;
+}
+
+a:visited .hidden {
+  visibility: visible;
+}
+
+.hiddendiv {display: none; }
+.testA:focus ~ #testA {display: block; }
+.testB:focus ~ #testB {display: block; }
+
+#content {
+  display: none;
+}
+input[type="text"]{
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    padding: 6px 12px;
+    width: 150px;
+    cursor: pointer;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input:focus + div#content {
+  display: block;
+}
+
+var audio = document.getElementsByTagName("audio")[0];
+audio.play();
+
+// or with an ID
+
+var audio = document.getElementById("mySoundClip");
+audio.play();
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{}
+
+/*----------------------------------------------Content Container-------------------------------------*/
+
+#container{}
+
+/*--Content--*/
+
+#container #col0{display:block; float:right; font-size:80px width:50%; color:#FFFFFF; background-color:#888888;}
+#container #col00{display:block;position: absolute; top: 85%; left: 90%;  transform: translate(-85%, -90%); vertical-align: bottom;  ; width:30%; color:#000000;  opacity:1}
+
+#container #col1{display:block; float:left; width:25%; color:#FFFFFF; background-color:#feb655;}  /* sárga háttér */
+
+#container #col2{display:block; float:left; width:25%; color:#FFFFFF; background-color:#c8bcfe;} /* lila háttér */
+
+#container #col3{display:block; float:left; width:25%; color:#FFFFFF; background-color:#888888;} /* szürke háttér */
+
+#container #col4{display:inline; float:right; width:75%; color:#8B4513; }/* bentebb, rozsda szín nincs háttér */
+#container #col5{display:inline; position: absolute; top: 100%; left: 100%;  transform: translate(-100%, -100%); vertical-align: bottom; width:100%; color:#FFFFFF;  opacity:1} /* bal lent, fehér betű, nincs háttér */
+#container #col6{display:block; float:center; width:50%; color:#00000; background-color:#000000;} /* fehér betű, fekete háttér */
+#container #col7{display:block; float:center; width:75%; color:#00000; } /* fehér betű, nincs háttér */
+#container #col8{display:block; float:left; width:25%; color:#FFFFFF; background-color:#888888;} /* szürke háttér */
+#container #col9{display:block; float:center; width:100%; color:#00000; background-color:#000000;opacity: 0.3}/* teljes kép, áttetsző háttér */
+#container #col10{display:block; float:left; width:25%; color:#FFFFFF; background-color:#666666;} /* szürke háttér */
+#container #col11{display:block;position: absolute; top: 40%; left: 20%;  transform: translate(-40%, -20%); vertical-align: bottom; width:50%; color:#000000;  opacity:1} /* float, bal közép felett, no háttér */
+#container #col12{display:block;position: absolute; top: 85%; left: 90%;  transform: translate(-85%, -90%); vertical-align: bottom; width:30%; color:#000000;  opacity:1} /* float, jobb lent háttér */
+#container #col12a{display:block;position: absolute; top: 85%; left: 90%;  transform: translate(-85%, -90%); vertical-align: bottom; width:65%; color:#000000;  opacity:1}/* float, középszerű, test_in:tek,kisértet*/
+#container #col12b{display:block;position: absolute; top: 75%; left: 90%;  transform: translate(-75%, -90%); vertical-align: bottom; width:90%; color:#000000;  opacity:1}/* float, jobb lent háttér test_in:valami*/
+#container #col13{display:block;position: absolute; top: 50%; left: 20%;  transform: translate(-50%, -20%); vertical-align: bottom; width:30%; color:#000000;  opacity:1}/* float, jobb lent */
+#container #col14{display:block;position: absolute; top: 85%; left: 90%;  transform: translate(-85%, -90%); vertical-align: bottom;  ; width:30%; color:#000000;  opacity:1}/* float, jobb lent */
+#container #col15{display:block; position: absolute; top: 0%; left: 0%;  transform: translate(-0%, -0%);  vertical-align:bottom ;   width:100%; color:#000000;  opacity:1}/* bal fent,float, no háttér */
+#container #col16{display:block;  width:10%; color:#FFFFFF;  position: absolute; top: 50%; left: 20%;  transform: translate(-50%, -20%); } /* nem igazán tudom megmagyarázni */
+#container #col17{display: flex; /* justify-content:center; */ width:10%; color:#FFFFFF;  /* position: absolute; top: 110%; left: 100%;  transform: translate(-110%, -100%); */ } /* bal fent,float, no háttér, fura*/
+#container #col18{display:block;position: absolute; top: 80%; left: 40%;  transform: translate(-80%, -50%); vertical-align: bottom; width:20%; color:#FFFFFF;  opacity: 1}
+#container #col18a{display:block;position: absolute; top: 80%; left: 60%;  transform: translate(-80%, -50%); vertical-align: bottom; width:20%; color:#FFFFFF;  opacity: 1}
+#container #col18b{display:block;position: absolute; top: 80%; left: 80%;  transform: translate(-80%, -50%); vertical-align: bottom; width:20%; color:#FFFFFF;  opacity: 1}
+#container #col19{display:block; float:left; width:50%; color:#FFFFFF; background-color:#000000;} /* bal fent,fekete */
+#container #col20{display:block;position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); vertical-align: bottom; width:100%; color:#FFFFFF; background-color:#000000; opacity:0.4}/* közép, opaque, teljes szélesség */
+#container #col21{display:block;position: absolute; top: 50%; left: 80%;  transform: translate(-50%, -80%); vertical-align: bottom; width:30%; color:#000000;  opacity:1} /* jobb közép,float, no háttér */
+#container #col22{display:block;position: absolute; top: 90%; left: 90%;  transform: translate(-90%, -90%); vertical-align: bottom; width:20%; color:#FFFFFF; background-color:#000000; opacity:0.5} /* jobb, lent,float, szürke háttér, opaque */
+#container #col23{display:block; float:center; width:75%; color:#FFFFFF; background-color:#000000;} /* bal fent,fekete háttér */
+#container #col24{display:block;position: absolute; top: 100%; left: 100%;  transform: translate(-100%, -100%); vertical-align: bottom; width:100%; color:#FFFFFF; background-color:#000000; opacity:0.4} /* balra zárt, lent, teljes szélesség, opaque */
+#container #col25{display:block; float:right; width:20%; color:#FFFFFF; background-color:#000000;} /* jobb fent, fekete háttér */
+#container #col26{display:block;  text-align: center;width:20%; color:#FFFFFF; background-color:#000000;position: absolute; top: 100%; left: 100%;  transform: translate(-100%, -100%); } /* jobb fent,box, fekete háttér */
+#container #col27{display:block;position: absolute; top: 100%; left: 100%;  transform: translate(-100%, -100%); vertical-align: bottom; width:20%; color:#FFFFFF; background-color:#000000; opacity: 0.3} /* jobb fent,box, fekete háttér, opaque */
+#container #col28{display:block;position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); vertical-align: bottom; width:80%; color:#FFFFFF; background-color:#000000; opacity: 0.6} /* közép, 50%, opaque fekete háttér */
+#container #col29{display:block; float:left; text-align: center;width:5%; color:#FFFFFF; background-color:#000000; }/* bal fent,szűk, fekete háttér */
+#container #col30{display:block;position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); vertical-align: bottom; width:80%; color:#FFFFFF; background-color:#000000; opacity: 0.8} /* közép, 50%, fekete háttér, hottos */
+#container #col30a{display:block;position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); vertical-align: bottom; width:80%; color:#FFFFFF; /* background-color:#000000; */ opacity: 0.8} /* közép, 50%, fekete háttér, hottos */
+#container #col31{display:inline; float:right; width:20%; color:#FFFFFF; } /* jobb fent, no háttér */
+#container #col32{display:inline; float:left; width:25%; color:#B87333; } /* bal fent,box, rezes  */
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{}
